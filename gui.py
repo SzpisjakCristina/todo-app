@@ -11,8 +11,8 @@ input_box = sg.InputText(tooltip="Enter to do", key="todo")
 add_button = sg.Button(image_source="add.png", tooltip="Add to do", key="Add")
 list_box = sg.Listbox(values=functions.get_todos(), key='todos',
                       enable_events=True, size=[45, 10])
-edit_button = sg.Button("Edit")
-complete_button = sg.Button("Complete")
+edit_button = sg.Button("Edit", tooltip="Edit to do")
+complete_button = sg.Button("Complete", tooltip="Complete to do")
 exit_button = sg.Button("Exit")
 
 window = sg.Window('My To-Do App',
